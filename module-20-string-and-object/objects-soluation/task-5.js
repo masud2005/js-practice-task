@@ -20,3 +20,21 @@ Problem-5:
     key: city | type:  string
     key: isStudent | type:  boolean
 */
+
+
+// Solve it-----
+
+let myObject = {
+    name: "John Doe",
+    age: 25,
+    city: "Example City",
+    isStudent: true
+}
+
+for(const key in myObject){
+    const value = myObject[key];
+    // console.log(value);
+    const type = typeof value;
+    // console.log(type);
+    console.log("Key: ", key ,"| Type: ", type);
+}
