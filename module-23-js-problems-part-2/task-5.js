@@ -26,9 +26,9 @@ function monthlySalary(employees){
     for (let i = 0; i < employees.length; i++) {
       const employee = employees[i];
       const startingSalary = employee.starting;
-      const monthlyIncrementSalary = employee.experience * employee.increment;
-      const totalMonthlySalary = startingSalary + monthlyIncrementSalary;
-      monthlySalaries.push({ name: employee.name, totalMonthlySalary });
+      const incrementSalary = employee.experience * employee.increment;
+      const totalMonthlySalary = startingSalary + incrementSalary;
+      monthlySalaries.push({name: employee.name, totalMonthlySalary });
     }
     return monthlySalaries;
 }
